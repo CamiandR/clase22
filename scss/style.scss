@@ -1,0 +1,110 @@
+@import 'paquete';
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    header{
+        @include flex(space-between,center);
+        nav{
+            ul{
+                @include flex(space-between,center);
+                list-style: none;
+                column-gap: 1rem;
+            }
+        }
+    }
+    
+    main{
+        section{
+            @include flex(space-between,center);
+            div{
+                h1{
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    font-size: 55px;
+                    line-height: 70px;
+                    letter-spacing: 10px;
+                    width: 60%;
+                    position: relative;
+                    z-index: 1;
+                    &::before
+                    {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 215px;
+                        height: 40px;
+                        background-color: $shadow;
+                        z-index: -1;
+                    }
+                }
+                p{
+                    margin-top: 20px;
+                    line-height: 30px;
+                    width: 90%;
+                    margin-bottom: 10px;
+                    color: $color-primary;
+                }
+                button{
+                    @include btn;
+                }
+            }
+            img{
+                width: 40%;
+            }
+            article{
+                background-color: $bg-secondary;
+                width: 32%;
+                padding: 12px 12px 50px;
+                p.num{
+                    display: inline-block;
+                    border: 1px solid $color-primary;
+                    border-radius: 50%;
+                    padding: 10px 14px;
+                    margin-bottom: 10px;
+                    box-shadow: -4px 0 0 0 $shadow;
+                }
+                h3{
+                    position: relative;
+                    z-index: 1;
+                    // box-shadow: -4px -4px 0 0 $shadow;
+                    &::before
+                    {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 20px;
+                        height: 10px;
+                        background-color: $shadow;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+        
+    }
+    footer{
+        @include flex(space-between,center);
+        div{
+            margin-top: 30px;
+            a{
+                img{       
+                    width: 15px;
+                    height: 15px;
+                }
+                border: 1px solid white;
+                display: inline-block;
+                box-shadow: -4px 0 0 0 $shadow;
+                border-radius: 50%;
+                padding: 10px;
+            }
+        }
+    }
+}

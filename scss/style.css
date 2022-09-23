@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+}
+body main section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main section div h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 55px;
+  line-height: 70px;
+  letter-spacing: 10px;
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+body main section div h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 215px;
+  height: 40px;
+  background-color: #92f7f2;
+  z-index: -1;
+}
+body main section div p {
+  margin-top: 20px;
+  line-height: 30px;
+  width: 90%;
+  margin-bottom: 10px;
+  color: #8b8b8b;
+}
+body main section div button {
+  background-color: #03faee;
+  padding: 12px 23px;
+  border-radius: 5px;
+  border: 1px solid rgb(159, 156, 156);
+  margin-left: 20px;
+}
+body main section img {
+  width: 40%;
+}
+body main section article {
+  background-color: #f8f8f8;
+  width: 32%;
+  padding: 12px 12px 50px;
+}
+body main section article p.num {
+  display: inline-block;
+  border: 1px solid #8b8b8b;
+  border-radius: 50%;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  box-shadow: -4px 0 0 0 #92f7f2;
+}
+body main section article h3 {
+  position: relative;
+  z-index: 1;
+}
+body main section article h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 10px;
+  background-color: #92f7f2;
+  z-index: -1;
+}
+body footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body footer div {
+  margin-top: 30px;
+}
+body footer div a {
+  border: 1px solid white;
+  display: inline-block;
+  box-shadow: -4px 0 0 0 #92f7f2;
+  border-radius: 50%;
+  padding: 10px;
+}
+body footer div a img {
+  width: 15px;
+  height: 15px;
+}/*# sourceMappingURL=style.css.map */

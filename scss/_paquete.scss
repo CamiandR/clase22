@@ -1,0 +1,19 @@
+$bg-primary: #03faee;
+$bg-secondary: #f8f8f8;
+$color-primary: #8b8b8b;
+$shadow: #92f7f2;
+
+
+@mixin flex ($jc, $ai) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin btn {
+    background-color: $bg-primary;
+    padding: 12px 23px;
+    border-radius: 5px;
+    border: 1px solid rgb(159, 156, 156);
+    margin-left: 20px;
+}
